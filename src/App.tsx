@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, Eye } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 import AboutPage from "./components/AboutPage";
 import EducationPage from "./components/EducationPage";
 import ExperiencePage from "./components/ExperiencePage";
@@ -480,6 +481,7 @@ export default function App() {
 
       </footer>
 
+      <Analytics />
     </div>
   );
 }
